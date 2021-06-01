@@ -1,10 +1,12 @@
 import { combineReducers, createStore } from "redux";
-import hebitsListReduser from "./habits-list-reduser"
+import habitsListReduser from "./habits-list-reduser"
 
 const redusers = combineReducers({
-    heditsList: hebitsListReduser
+    habitsList: habitsListReduser
 })
 
 let store = createStore(redusers)
+
+window.store = store;
 
 export default store;
