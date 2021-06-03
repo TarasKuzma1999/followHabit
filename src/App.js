@@ -1,7 +1,10 @@
 import { Provider } from 'react-redux';
 import './App.css';
+import Diagram from './components/diagram';
 import Heabits from './components/habits';
 import store from './redux/store';
+import * as V from 'victory';
+
 
 
 function App() {
@@ -10,6 +13,8 @@ function App() {
       <div className="App">
         <h1>Ваші звички</h1>
         <Heabits />
+        <Diagram />
+
       </div>
     </Provider>
   );
